@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		117327AC2897BAB000188044 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117327AB2897BAB000188044 /* HomeView.swift */; };
+		117327AE2897BAB900188044 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117327AD2897BAB900188044 /* HomePresenter.swift */; };
+		117327B12897BAD000188044 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117327B02897BAD000188044 /* EditView.swift */; };
+		117327B32897BADE00188044 /* EditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117327B22897BADE00188044 /* EditPresenter.swift */; };
+		117327B62897BAEF00188044 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117327B52897BAEF00188044 /* CreateView.swift */; };
+		117327B82897BAFA00188044 /* CreatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117327B72897BAFA00188044 /* CreatePresenter.swift */; };
 		11AF66F9288FC04D009D83D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF66F8288FC04D009D83D0 /* AppDelegate.swift */; };
 		11AF66FB288FC04D009D83D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF66FA288FC04D009D83D0 /* SceneDelegate.swift */; };
 		11AF66FD288FC04D009D83D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF66FC288FC04D009D83D0 /* ViewController.swift */; };
@@ -28,6 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		117327AB2897BAB000188044 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		117327AD2897BAB900188044 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		117327B02897BAD000188044 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		117327B22897BADE00188044 /* EditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPresenter.swift; sourceTree = "<group>"; };
+		117327B52897BAEF00188044 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		117327B72897BAFA00188044 /* CreatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePresenter.swift; sourceTree = "<group>"; };
 		11AF66F5288FC04D009D83D0 /* StoryBoardContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBoardContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11AF66F8288FC04D009D83D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11AF66FA288FC04D009D83D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +76,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117327A72897BA6F00188044 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				117327AA2897BAA600188044 /* presenter */,
+				11AF6713288FC4BB009D83D0 /* HomeViewController.xib */,
+				11AF6712288FC4BB009D83D0 /* HomeViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		117327A82897BA7600188044 /* create */ = {
+			isa = PBXGroup;
+			children = (
+				117327B42897BAE300188044 /* presenter */,
+				11AF6717288FC4CB009D83D0 /* CreateViewController.xib */,
+				11AF6716288FC4CA009D83D0 /* CreateViewController.swift */,
+			);
+			path = create;
+			sourceTree = "<group>";
+		};
+		117327A92897BA7D00188044 /* edit */ = {
+			isa = PBXGroup;
+			children = (
+				117327AF2897BAC100188044 /* presenter */,
+				11AF671B288FC4D4009D83D0 /* EditViewController.xib */,
+				11AF671A288FC4D4009D83D0 /* EditViewController.swift */,
+			);
+			path = edit;
+			sourceTree = "<group>";
+		};
+		117327AA2897BAA600188044 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				117327AB2897BAB000188044 /* HomeView.swift */,
+				117327AD2897BAB900188044 /* HomePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		117327AF2897BAC100188044 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				117327B02897BAD000188044 /* EditView.swift */,
+				117327B22897BADE00188044 /* EditPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		117327B42897BAE300188044 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				117327B52897BAEF00188044 /* CreateView.swift */,
+				117327B72897BAFA00188044 /* CreatePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
 		11AF66EC288FC04C009D83D0 = {
 			isa = PBXGroup;
 			children = (
@@ -121,12 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				11AF6710288FC4AF009D83D0 /* BaseViewController.swift */,
-				11AF6712288FC4BB009D83D0 /* HomeViewController.swift */,
-				11AF6713288FC4BB009D83D0 /* HomeViewController.xib */,
-				11AF6716288FC4CA009D83D0 /* CreateViewController.swift */,
-				11AF6717288FC4CB009D83D0 /* CreateViewController.xib */,
-				11AF671A288FC4D4009D83D0 /* EditViewController.swift */,
-				11AF671B288FC4D4009D83D0 /* EditViewController.xib */,
+				117327A72897BA6F00188044 /* home */,
+				117327A92897BA7D00188044 /* edit */,
+				117327A82897BA7600188044 /* create */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -278,12 +344,18 @@
 				11AF6714288FC4BB009D83D0 /* HomeViewController.swift in Sources */,
 				11AF66FD288FC04D009D83D0 /* ViewController.swift in Sources */,
 				11AF672428902BCF009D83D0 /* ContactsTableViewCell.swift in Sources */,
+				117327AE2897BAB900188044 /* HomePresenter.swift in Sources */,
+				117327B62897BAEF00188044 /* CreateView.swift in Sources */,
 				11AF6721288FC5CA009D83D0 /* Contacts.swift in Sources */,
 				11AF671F288FC59D009D83D0 /* Network.swift in Sources */,
+				117327AC2897BAB000188044 /* HomeView.swift in Sources */,
+				117327B12897BAD000188044 /* EditView.swift in Sources */,
 				11AF6718288FC4CB009D83D0 /* CreateViewController.swift in Sources */,
 				11AF6711288FC4AF009D83D0 /* BaseViewController.swift in Sources */,
 				11AF66F9288FC04D009D83D0 /* AppDelegate.swift in Sources */,
+				117327B82897BAFA00188044 /* CreatePresenter.swift in Sources */,
 				11AF66FB288FC04D009D83D0 /* SceneDelegate.swift in Sources */,
+				117327B32897BADE00188044 /* EditPresenter.swift in Sources */,
 				11AF671C288FC4D4009D83D0 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
